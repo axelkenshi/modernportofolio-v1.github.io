@@ -634,7 +634,7 @@ header ul a {
 .social-box a {
   color: lightgray;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   text-wrap: nowrap;
 }
 
@@ -646,7 +646,7 @@ header ul a {
 
 .social-icons a i {
   color: white;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .contact-box p {

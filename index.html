@@ -93,11 +93,11 @@
           </h1>
 
           <p>
-            I'm a Front-end developer with Experience in website, Mobile and
-            Software development. Checkout my and skills.
+            I'm a Front-end developer with Few Experience in website and
+            Software development. let's see about me!
           </p>
 
-          <button><i class="bx bx-send">Contact Me</i></button>
+          <button><i class="bx bx-send"><a href="#contact"> Contact Me</a></i></button>
         </div>
 
         <div class="hero-vid-box">
@@ -121,8 +121,8 @@
           <div class="card">
             <h1>Hi! I'm Axel Kenshi</h1>
             <p>
-              With 4 years of experience, I have developed a strong foundation
-              in frontend and backend dev.
+              Currently, I am a student majoring in software engineering, At Vocational High School.
+              I have a strong interest in creating user-friendly and visually appealing websites awesome.              
             </p>
             <img src="images/grid1.png" alt="card-image" />
           </div>
@@ -130,17 +130,19 @@
           <div class="card">
             <h1>Tech Stack</h1>
             <p>
-              I specialize in a variety of languages, frameworks & tools that
-              allow me to build robust and scalable applications.
+              I specialize in a variety of programming languages, frameworks & tools that
+              allow me to build robust and scalable applications. My expertise includes
+              HTML, CSS, JavaScript, React, Node.js, and more.
             </p>
             <img src="images/grid2.png" alt="card-image" />
           </div>
 
           <div class="card">
-            <h1 style="padding-bottom: 10%;">I'm very flexible with time zone communications & locations</h1>
+            <h1 style="padding-bottom: 10%;">I'm very flexible with time zone & locations</h1>
             <p>
-              I'm based in indonesian, West java and open to remote work
-              worldwide. i can communicate with english , indonesian, and japanese.
+              I'm based in indonesian, West java. 
+              worldwide. i can communicate with english and indonesian naturally.
+              don't hesitate to connect with me!
             </p>
             <video
               autoplay
@@ -158,6 +160,7 @@
               I love solving problems and building things through code.
               Programming isn't just my profession–it's my passion. I enjoy
               exploring new technologies, and enhancing my skills.
+              With 3 years of experiences.
             </p>
             <img src="images/grid4.png" alt="card-image" />
           </div>
@@ -204,10 +207,11 @@
           <div class="project-info fadeInRight">
             <h1>Modern <span class="gradient">Portofolio</span></h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur obcaecati illum ea unde odio accusantium quod
-              assumenda vel, recusandae, omnis mollitia vero aliquid tenetur
-              maxime.
+              This is a modern portfolio website template designed to showcase
+              your work and skills. It features a clean and responsive layout,
+              making it suitable for freelancers, designers, and developers.
+              The template includes sections for your projects, skills, and
+              contact information.
             </p>
             <button><i class="bx bx-link-external">Website</i></button>
           </div>
@@ -303,13 +307,10 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <h1 class="section-title autoDisplay">Let's talk☺️</h1>
 
         <div class="social-box">
-          <a href="#"><i class="bx bxl-telegram"></i>Contact Ex</a>
-          <a href="#"><i class="bx bxl-linkedin-square">xx x</i></a>
-
           <div class="social-icons">
             <a href="#"><i class="bx bxl-youtube"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -324,19 +325,22 @@
             to file. i'm here to help.
           </p>
 
+          <form id="contactForm">
           <p>Full Name</p>
-          <input type="text" placeholder="Your name..." />
+          <input type="text" id="text" placeholder="Your name..." required/>
 
           <p>Email Address</p>
-          <input type="email" placeholder="Your email.." />
+          <input type="email" id="email" placeholder="Your email.." required/>
 
           <p>Your message</p>
-          <input
+          <!-- <input
             class="input-message"
             type="text"
-            placeholder="Share your thoughts..." />
+            placeholder="Share your thoughts..." required/> -->
+            <textarea id="message" placeholder="Your Message" required></textarea>
 
-          <button><i class="bx bxs-send"></i>Send Message</button>
+          <button><i class="bx bxs-send" type="submit"></i>Send Message</button>
+        </form>
         </div>
       </section>
 
@@ -346,5 +350,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>

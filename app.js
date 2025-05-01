@@ -33,3 +33,28 @@ close.addEventListener('click', function() {
   sideBar.classList.remove('open-sidebar')
   sideBar.classList.add('close-sidebar');
 });
+
+// emailjs.init("axeldeev");
+// document.getElementById("contactForm").addEventListener("submit", function(event) {
+//   event.preventDefault();
+
+//   emailjs.sendForm("service_qyl58aj", "template_fpm0bi2", this)
+//     .then(function() {
+//       alert("Pesan berhasil dikirim!");
+//     }, function(error) {
+//       alert("Gagal mengirim pesan: " + JSON.stringify(error));
+//     });
+// });
+
+// Using mailto link for email sending
+// Note: This function will be malfunction
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const mailtoLink = `mailto:example@yahoo.com?subject=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+  window.location.href = mailtoLink;
+});

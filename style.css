@@ -167,6 +167,11 @@ header ul a {
   transition: 0.3s;
 }
 
+.hero-info button a {
+  text-decoration: none;
+  color: white;
+}
+
 .hero-info button:hover {
   box-shadow: 0 0 15px #727fde86;
 }
